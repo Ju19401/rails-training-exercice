@@ -1,0 +1,9 @@
+<%= simple_form (@rent) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :city %>
+  <%= f.input :displonibility %>
+  <%= f.input :price_per_day %>
+  <%= f.input :rating%>
+  <%= f.input :avatar, as: :file %>
+  <%= f.submit %>
+<% end %>

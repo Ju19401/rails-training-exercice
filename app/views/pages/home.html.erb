@@ -1,3 +1,7 @@
 <h1>Bonjour</h1>
 
-
+<%= form_with url: rents_path, method: :get do |form| %>
+          <%= form.text_field :city, placeholder: "City", class: "border border-light p-1" %>
+          <%= form.text_field :price, placeholder: "Price", class: "border border-light p-1" %>
+          <%= form.submit "Search", class: "btn" %>
+        <% end %>
